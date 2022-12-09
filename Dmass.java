@@ -2,10 +2,15 @@ public class Dmass<T> {
 
     int Staticsize;
     int counter = 0;
-    int place = 0;
-    int LastSize= (2*Staticsize)+10;
-    Object[] mass = new Object[LastSize];
+    int place;
+    int LastSize;
+    Object[] mass;
 
+    public void setMass(int Staticsize){
+        this.Staticsize=Staticsize;
+        LastSize=(2*Staticsize)+10;
+        mass = new Object[LastSize];
+    }
     Dmass(){}
 
     public void AddFirst(T addf){
