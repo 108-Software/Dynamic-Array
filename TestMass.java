@@ -7,7 +7,7 @@ public class TestMass <T>{
 
         System.out.print("Введите размер массива: ");
         int Staticsize = sc.nextInt();
-        Dm.Staticsize=Staticsize;
+        Dm.setMass(Staticsize);
         System.out.print(" 1. Добавление элемента в начало массива \n");
         System.out.print(" 2. Добавление элемента в конец массива \n 3. Удаление последнего элемента массива \n");
         System.out.print(" 4. Удаление элемента по индексу \n 5. Вставка элемента по ндексу \n");
@@ -54,7 +54,7 @@ public class TestMass <T>{
                         String Alo = sc.nextLine();
                         System.out.print("Введите элемент: ");
                         var data = sc.nextLine();
-                        Dm.AddIndex(ADDind, data);
+                        Dm.AddIndex(ADDind-1, data);
                         break;
 
                     case 6:
